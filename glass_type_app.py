@@ -232,7 +232,7 @@ if classifier == 'Random Forest Classifier':
 if classifier == 'Logistic Regression':
   st.sidebar.subheader("Model Hyperparameters")
   log_c_value = st.sidebar.number_input("C (Error Rate)", 1, 100, step = 1)
-  max_iter_input = st.sidebar.slider("Maximum number of iterations:", 100, 500, step = 10)
+  max_iter_input = st.sidebar.slider("Maximum number of iterations:", 10, 1000, step = 10)
 
   if st.sidebar.button("Classify"):
     st.subheader("Logistic Regression")
